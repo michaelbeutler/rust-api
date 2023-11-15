@@ -1,0 +1,15 @@
+[package]
+name = "hello-rocket"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = { version = "0.5.0-rc.1", features = ["json"]}
+chrono = { version = "0.4.19", features = ["serde"] }
+uuid = { version = "1.5.0", features = ["serde", "v4"] }
+derive_builder = "0.12.0"
+prometheus = { version = "0.13.3", features = ["process"] }
+jsonwebtoken = "9"
+serde = { version = "1.0.130", features = ["derive"] }
