@@ -1,12 +1,6 @@
 name: CI 🚧
 
-on:
-  workflow_call:
-    inputs:
-      rust-version:
-        type: string
-        required: false
-        default: nightly
+on: [push, pull_request]
 
 jobs:
   check:
